@@ -1,0 +1,7 @@
+<h1>Welcome to the 0mnivers3</h1>
+
+<p><%= link_to "Create a new Planet", new_planet_path %></p>
+
+<% Planet.all.each do |planet| %>
+    <%= link_to planet.name, planet %><br />
+<% end %>
